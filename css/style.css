@@ -1,86 +1,122 @@
 *, *::before, *::after { box-sizing: border-box;}
 
-
 body {
   background-color: #dadada;
-  font-size: 25px;
-  padding-top: 20px;
+  font-size: 10px;
+  display: block;
+  margin: 8px;
+  height:auto;
+}
+
+h1{
+  font-family: sans-serif;
+  font-size: 1.4em;
+  font-weight: 100;
+  letter-spacing: 3px;
   text-align: center;
+  text-transform: uppercase;
+  padding: 5%;
 }
 
-
-
-.container {
-  box-sizing: border-box;
-  margin:0 auto;
-  width: 375px;
-  vertical-align: middle
-
+.preview h1{
+  font-family: serif;
+  font-size: 3em;
+  font-weight: 100;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: capitalize;
+  padding-left: 10%;
+  padding-top: 10%;
 }
+
+div {
+  float:left;
+  width:100%;
+  height:300px;
+  margin-bottom: 5%;
+}
+
 .emphasis{
   font-size: 15px;
   font-weight: bold;
   font-family: sans-serif;
-
 }
 
-.image {
-
-  width: 100%;
-  height: 300px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  vertical-align: middle
-
+.preview{
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:bottom;
 }
 
-.text {
-  position: absolute;
-  margin:auto;
-  padding-left:40px;
-  padding-top: 60px;
-  color: #000;
+.baku {
+  background-image: url("../images/baku.jpg");
 }
-@media screen and (min-width: 740px){
-.place {
-  float: left;
-  margin: 10px;
-  width: 250px;
-  vertical-align: middle
+.london{
+  background-image: url("../images/london.png");
 }
-.container {
-  width: 73%;
+.madrid{
+  background-image: url("../images/madrid.jpg");
+}
+.rome{
+  background-image: url("../images/rome.jpg");
+}
 
-}
-.image{
-  height:200px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-.text {
-  position: absolute;
-  margin:auto;
-  padding-left:30px;
-  padding-top: 30px;
-  color: #000;
-}
+@media screen and (min-width: 1199px) {
+
 body {
-  font-size: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
-@media screen and (min-width: 1483px){
-  .container {
-    width: 48%;
+div{
+  margin: 1%;
+  width: 23%;
+  float: left;
+}
+}
 
+@media screen and (min-width: 575px) {
+
+div{
+  margin:1%;
+  width: 48%;
+  float: right;
+}
+.baku {
+  background-position:left;
+}
+.london {
+  background-position:right;
+}
+.madrid {
+  background-position:left;
+}
+}
+
+@media screen and (min-width: 1199px) {
+div{
+  margin: 1%;
+  width: 23%;
+  float: left;
   }
-  .image{
-    height:150px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-  .place {
-    float: left;
-    margin: 10px;
-    width: 200px;
-  }
+@media screen and (min-width: 1575px) {
+  .rome{
+    background-position: left;
+}
+}
+
+@media screen and (min-width: 1919px) {
+
+.baku {
+  background-position: center;
+}
+.london {
+  background-position: center;
+}
+.madrid {
+  background-position: center;
+}
+.rome {
+  background-position: center;
+}
 }
